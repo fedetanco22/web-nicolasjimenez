@@ -1,0 +1,9 @@
+.banner {
+    @include bg-img();
+    background-image: url('/images/banner-moto.jpg');
+    height: 100vh;
+    
+    &__titulos {
+        padding-top: 20vh;
+    }
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+h1, h2, h3, h4 {
+  all: unset; }
+
+/* @mixin titulos-h1 {
+    font-family: ;
+    
+} */
+.button {
+  padding: 5px 20px;
+  border-radius: 45px;
+  background-color: red;
+  border: none; }
+
+.banner {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: contain;
+  background-image: url("/images/banner-moto.jpg");
+  height: 100vh; }
+  .banner__titulos {
+    padding-top: 20vh; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4rem;
+  color: #fff; }
