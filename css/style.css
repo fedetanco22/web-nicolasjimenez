@@ -14,6 +14,7 @@ h1, h2, h3, h4 {
     
 } */
 .button {
+  display: inline-block;
   padding: 5px 20px;
   border-radius: 45px;
   background-color: red;
@@ -28,9 +29,13 @@ h1, h2, h3, h4 {
   background-image: url("/images/banner-moto.jpg");
   height: 100vh; }
   .banner__titulos {
-    padding-top: 20vh; }
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left; }
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: #fff; }

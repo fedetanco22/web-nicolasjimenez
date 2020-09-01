@@ -6,7 +6,18 @@
     background-attachment: contain;   
     
 }
-
+@mixin flex-col-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-col-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
 /* @mixin titulos-h1 {
     font-family: ;
     
