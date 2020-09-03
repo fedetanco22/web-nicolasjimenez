@@ -6,13 +6,30 @@
 html {
   font-size: 62.5%; }
 
-h1, h2, h3, h4 {
-  all: unset; }
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #000;
+  color: #999; }
 
-/* @mixin titulos-h1 {
-    font-family: ;
-    
-} */
+ul {
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4 {
+  color: #fff; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+p {
+  margin: 1rem 0; }
+
+img {
+  width: 100%; }
+
 .button {
   display: inline-block;
   padding: 5px 20px;
@@ -24,18 +41,40 @@ h1, h2, h3, h4 {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
-  background-attachment: contain;
-  background-image: url("/images/banner-moto.jpg");
-  height: 100vh; }
+  background-position: center;
+  background-attachment: fixed center;
+  background-image: url("/images/moto-inicio2.png");
+  background-color: #333;
+  height: 90vh;
+  position: relative; }
   .banner__titulos {
-    padding-top: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left; }
+    padding-top: 25vh; }
+    .banner__titulos__h1 {
+      font-size: 10em;
+      color: #fff;
+      text-transform: uppercase; }
+    .banner__titulos__h3 {
+      font-style: italic;
+      font-weight: 300;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 0 0 20px 0; }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2.5rem;
+.header {
+  z-index: 100;
+  width: 100%;
+  position: fixed; }
+
+.logo {
+  padding: 15px; }
+  .logo__img {
+    width: 170px; }
+
+.hamb__icon {
   color: #fff; }
+
+.menu {
+  display: none; }
+
+.redes {
+  display: none; }

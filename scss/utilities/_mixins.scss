@@ -2,23 +2,21 @@
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
-    background-attachment: contain;   
-    
+    background-position: center;
+    background-attachment: fixed center;
+
 }
-@mixin flex-col-center{
+
+@mixin flex-col-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-@mixin flex-col-left{
+
+@mixin flex-col-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
 }
-/* @mixin titulos-h1 {
-    font-family: ;
-    
-} */

@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,6 +8,32 @@ html {
     font-size: 62.5%;
 }
 
-h1, h2, h3, h4 {
-    all:unset ;
+body {
+    font-family: $roboto;
+    background-color: #000;
+    color: #999;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+img {
+    width: 100%;
 }

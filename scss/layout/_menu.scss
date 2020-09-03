@@ -1,0 +1,25 @@
+.header {
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+}
+
+.logo {
+    padding: 15px;
+
+    &__img {
+        width: 170px;
+    }
+}
+
+.hamb__icon {
+    color: #fff;
+}
+
+.menu {
+    display: none;
+}
+
+.redes {
+    display: none;
+}
