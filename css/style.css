@@ -43,12 +43,24 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed center;
-  background-image: url("/images/moto-inicio2.png");
+  background-image: url("/images/IMG_0963.jpg");
   background-color: #333;
-  height: 90vh;
+  height: 95vh;
   position: relative; }
+  .banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.503);
+    z-index: 1;
+    box-shadow: inset 120px 100px 250px #000; }
   .banner__titulos {
-    padding-top: 25vh; }
+    padding-top: 30vh;
+    position: relative;
+    z-index: 2; }
     .banner__titulos__h1 {
       font-size: 10em;
       color: #fff;
