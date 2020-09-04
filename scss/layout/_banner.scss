@@ -14,12 +14,13 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.503);
         z-index: 1;
-        box-shadow: inset 120px 100px 250px #000;
+        box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000;
     }
 
 
     &__titulos {
-        padding-top: 30vh;
+        transform: translateY(100%);
+        /* padding-top: 35vh; */
         position: relative;
         z-index: 2;
 

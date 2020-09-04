@@ -12,6 +12,7 @@ body {
     font-family: $roboto;
     background-color: #000;
     color: #999;
+    -webkit-font-smoothing: antialiased;
 }
 
 ul {
@@ -36,4 +37,5 @@ p {
 
 img {
     width: 100%;
+
 }
