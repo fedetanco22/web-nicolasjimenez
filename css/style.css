@@ -93,3 +93,30 @@ img {
 
 .redes {
   display: none; }
+
+.carousel__contenedor {
+  position: relative; }
+
+.carousel__siguiente, .carousel__anterior {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: #fff;
+  opacity: 20%; }
+
+.carousel__anterior {
+  left: -30px; }
+
+.carousel__siguiente {
+  right: -30px; }
+
+.carousel__img {
+  height: 100px;
+  width: 100px; }
