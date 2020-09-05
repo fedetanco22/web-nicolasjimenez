@@ -57,14 +57,15 @@ img {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.503);
     z-index: 1;
-    box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000; }
+    /* box-shadow: inset -20px -20px 50px #000, inset -10px -20px 100px #000; */
+    /* inset -50px -100px 250px #000; */ }
   .banner__titulos {
     transform: translateY(100%);
     /* padding-top: 35vh; */
     position: relative;
     z-index: 2; }
     .banner__titulos__h1 {
-      font-size: 10em;
+      font-size: 5em;
       color: #fff;
       text-transform: uppercase; }
     .banner__titulos__h3 {
@@ -94,29 +95,47 @@ img {
 .redes {
   display: none; }
 
-.carousel__contenedor {
-  position: relative; }
-
-.carousel__siguiente, .carousel__anterior {
-  position: absolute;
-  display: block;
-  width: 30px;
-  height: 30px;
-  border: none;
-  top: calc(50% - 35px);
-  cursor: pointer;
-  line-height: 30px;
+.carousel {
+  margin: 50px 0;
+  width: 100%;
   text-align: center;
-  background: none;
-  color: #fff;
-  opacity: 20%; }
-
-.carousel__anterior {
-  left: -30px; }
-
-.carousel__siguiente {
-  right: -30px; }
-
-.carousel__img {
-  height: 100px;
-  width: 100px; }
+  text-transform: uppercase; }
+  .carousel__contenedor {
+    position: relative;
+    margin: 20px 20px; }
+  .carousel__elemento {
+    display: flex;
+    align-items: center; }
+  .carousel__indicadores .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    opacity: .2;
+    border-radius: 0; }
+    .carousel__indicadores .glider-dot:hover {
+      opacity: .5; }
+    .carousel__indicadores .glider-dot.active {
+      opacity: .5; }
+  .carousel__siguiente, .carousel__anterior {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 20px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #fff;
+    opacity: 20%; }
+  .carousel__siguiente:hover, .carousel__anterior:hover {
+    opacity: 100%; }
+  .carousel__anterior {
+    left: -30px; }
+  .carousel__siguiente {
+    right: -30px; }
+  .carousel__img {
+    width: 150px;
+    height: auto; }
