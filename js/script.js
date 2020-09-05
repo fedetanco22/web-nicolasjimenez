@@ -2,6 +2,7 @@ window.addEventListener('load', function () {
     new Glider(document.querySelector('.carousel__lista'), {
         slidesToShow: 1,
         slidesToScroll: 1,
+        rewind: true,
 
         arrows: {
             prev: '.carousel__anterior',
