@@ -1,7 +1,8 @@
-.button {
-    display: inline-block;
-    padding: 5px 20px;
-    border-radius: 45px;
+.whatsapp-button {
+    /* background-color: #25d366; */
     background-color: red;
-    border: none;
+    padding: 10px 20px;
+    border-radius: 45px;
+    text-transform: capitalize;
+    font-size: 1.5rem;
 }

@@ -27,12 +27,42 @@
 
 <body>
     <div class="contenedor">
+        <header class="header">
+            <div class="header__contenedor container">
 
-        <!-- <header class="header">
+                <a href="/index.html"><img class="header__logo" src="images/logo-blanco.svg" alt="logo" srcset="">
+                </a>
+
+                <input type="checkbox" id="hamb" class="hamb">
+                <label for="hamb" class="hamb__label">
+                    <span class="hamb__button">
+                        <i class="hamb__icon fas fa-bars"></i>
+                    </span>
+                </label>
+
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"> <a class="menu__link" href="index.html"> Inicio </a></li>
+                        <li class="menu__item"> <a class="menu__link" href="index.html"> sobre mi </a></li>
+                        <li class="menu__item"> <a class="menu__link" href="contacto.html"> Contacto </a></li>
+                        <li class="menu__item menu__instagram">
+                            <a href="#" class="menu__link menu__link-insta redes__links"><i
+                                    class="menu__icon fab fa-instagram"></i></a>
+                            <a href="#" class="menu__link menu__link-insta redes__links"><i
+                                    class="menu__icon fab fa-facebook"></i></a>
+                            <a href="#" class="menu__link menu__link-insta redes__links"><i
+                                    class="menu__icon fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--  <header class="header">
             <div class="container-fluid">
                 <div class="row justify-content-around align-items-center">
                     <a class="logo col-3"><img class="logo__img" src="images/logo-blanco.svg" alt="logo" srcset="">
                     </a>
+
 
                     <input type="checkbox" id="hamb" class="hamb">
                     <label for="hamb" class="hamb__label">
@@ -48,7 +78,6 @@
                             <li class="menu__item"><a href="#" class="menu__link">Contacto</a></li>
                         </ul>
                     </nav>
-
                     <div class="redes">
                         <a href="#" class="redes__links"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="redes__links"><i class="fab fa-facebook"></i></a>
@@ -64,61 +93,122 @@
                     <h1 class="banner__titulos__h1">Nicol&aacute;s</h1>
                     <h1 class="banner__titulos__h1">Jim&eacute;nez</h1>
                     <h3 class="banner__titulos__h3">/ Fot&oacute;grafo</h3>
+                    <!-- inicio boton whatsapp -->
+                    <a class="whatsapp-button whatsapp-button-banner" target="blank"
+                        href="https://wa.me/5493516367968"><i class="fab fa-whatsapp text-white"></i> contacto</a>
+                    <!-- fin boton whatsapp -->
 
-                    <a class="button" type="submit">Escribime.</a> <!-- Cambiar por Et. "a" -->
                 </div>
             </div>
         </div>
-        <main class="principal container flex-column">
-            <div class="carousel container">
-                <h1>Marcas que confian</h1>
-                <div class="carousel__contenedor">
-                    <button aria-label="Anterior" class="carousel__anterior">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
+        <main class="principal flex-column">
+            <section class="container">
+                <div class="carousel container ">
+                    <h1>Marcas que confian</h1>
+                    <div class="carousel__contenedor">
+                        <button aria-label="Anterior" class="carousel__anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
 
-                    <div class="carousel__lista">
-                        <div class="carousel__elemento">
-                            <img class="carousel__img" src="images/logos/fox.png" alt="" srcset="">
+                        <div class="carousel__lista">
+                            <div class="carousel__elemento">
+                                <img class="carousel__img" src="images/logos/fox.png" alt="" srcset="">
+                            </div>
+                            <div class="carousel__elemento">
+                                <img class="carousel__img" src="images/logos/patagonia.png" alt="" srcset="">
+                            </div>
+                            <div class="carousel__elemento">
+                                <img class="carousel__img" src="images/logos/SUZUKI.png" alt="" srcset="">
+                            </div>
+                            <div class="carousel__elemento">
+                                <img class="carousel__img" src="images/logos/Belgrano.png" alt="" srcset="">
+                            </div>
+                            <div class="carousel__elemento">
+                                <img class="carousel__img" src="images/logos/monster.png" alt="" srcset="">
+                            </div>
+                            <div class="carousel__elemento">
+                                <img class="carousel__img" src="images/logos/cordoba-motos.png" alt="" srcset="">
+                            </div>
+                            <div class="carousel__elemento">
+                                <img class="carousel__img" src="images/logos/honda.png" alt="" srcset="">
+                            </div>
+                            <div class="carousel__elemento">
+                                <img class="carousel__img" src="images/logos/Husqvarna-Logo.png" alt="" srcset="">
+                            </div>
+                            <div class="carousel__elemento">
+                                <img class="carousel__img" src="images/logos/RADIKAL.png" alt="" srcset="">
+                            </div>
+                            <div class="carousel__elemento">
+                                <img class="carousel__img"
+                                    src="images/logos/ kisspng-just-1-j12-dominator-helmet-supermoto-motorcycle-    h-5b915f7ee8ef30.1605240615362538229541.png"
+                                    alt="" srcset="">
+                            </div>
                         </div>
-                        <div class="carousel__elemento">
-                            <img class="carousel__img" src="images/logos/patagonia.png" alt="" srcset="">
-                        </div>
-                        <div class="carousel__elemento">
-                            <img class="carousel__img" src="images/logos/SUZUKI.png" alt="" srcset="">
-                        </div>
-                        <div class="carousel__elemento">
-                            <img class="carousel__img" src="images/logos/Belgrano.png" alt="" srcset="">
-                        </div>
-                        <div class="carousel__elemento">
-                            <img class="carousel__img" src="images/logos/monster.png" alt="" srcset="">
-                        </div>
-                        <div class="carousel__elemento">
-                            <img class="carousel__img" src="images/logos/cordoba-motos.png" alt="" srcset="">
-                        </div>
-                        <div class="carousel__elemento">
-                            <img class="carousel__img" src="images/logos/honda.png" alt="" srcset="">
-                        </div>
-                        <div class="carousel__elemento">
-                            <img class="carousel__img" src="images/logos/Husqvarna-Logo.png" alt="" srcset="">
-                        </div>
-                        <div class="carousel__elemento">
-                            <img class="carousel__img" src="images/logos/RADIKAL.png" alt="" srcset="">
-                        </div>
-                        <div class="carousel__elemento">
-                            <img class="carousel__img"
-                                src="images/logos/ kisspng-just-1-j12-dominator-helmet-supermoto-motorcycle-    h-5b915f7ee8ef30.1605240615362538229541.png"
-                                alt="" srcset="">
-                        </div>
+
+                        <button aria-label="Siguiente" class="carousel__siguiente">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
                     </div>
 
-                    <button aria-label="Siguiente" class="carousel__siguiente">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+                    <div role="tablist" class="carousel__indicadores"></div>
                 </div>
+            </section>
+            <section class="tabs">
+                <div class="tabs__container">
+                    <div id="tab-1" class="tabs__item tabs__item--border">
+                        <i class="fas fa-door-open fa-3x"></i>
+                        <p class="hide-sm">Deportes</p>
+                    </div>
+                    <div id="tab-2" class="tabs__item ">
+                        <i class="fas fa-tablet-alt fa-3x"></i>
+                        <p class="hide-sm">Motos</p>
+                    </div>
+                    <div id="tab-3" class="tabs__item ">
+                        <i class="fas fa-tags fa-3x"></i>
+                        <p class="hide-sm">Dron</p>
+                    </div>
+                </div>
+            </section>
+            <section class="tab-content">
+                <div class="container-tab">
+                    <!-- TAB CONTENT 1 -->
+                    <div id="tab-1-content" class="tab-content-item show">
+                        <div class="tab-1-content-grid">
+                            <img class="images1" src="images/motos/4A0A5389.jpg" alt="" srcset="">
+                            <img class="images2" src="images/motos/4A0A5955.jpg" alt="" srcset="">
+                            <img class="images3" src="images/motos/4A0A5955.jpg" alt="" srcset="">
+                            <img class="images4" src="images/motos/4A0A5955.jpg" alt="" srcset="">
+                            <img class="images5" src="images/motos/4A0A5955.jpg" alt="" srcset="">
+                            <img class="images6" src="images/motos/4A0A5955.jpg" alt="" srcset="">
+                            <img class="images7" src="images/motos/4A0A5955.jpg" alt="" srcset="">
+                            <img class="images8" src="images/motos/4A0A5955.jpg" alt="" srcset="">
+                            <img class="images9" src="images/motos/4A0A5955.jpg" alt="" srcset="">
+                            <img class="images10" src="images/motos/4A0A5955.jpg" alt="" srcset="">
+                            <img class="images11" src="images/motos/4A0A5955.jpg" alt="" srcset="">
+                            <img class="images12" src="images/motos/4A0A5955.jpg" alt="" srcset="">
+                            <img class="images13" src="images/motos/4A0A5955.jpg" alt="" srcset="">
+                            <img class="images14" src="images/motos/4A0A5955.jpg" alt="" srcset="">
+                            <img class="images15" src="images/motos/4A0A5955.jpg" alt="" srcset="">
+                            <img class="images16" src="images/motos/4A0A5955.jpg" alt="" srcset="">
+                            <img class="images17" src="images/motos/4A0A5955.jpg" alt="" srcset="">
+                            <img class="images18" src="images/motos/4A0A5955.jpg" alt="" srcset="">
+                            <img class="images19" src="images/motos/4A0A5955.jpg" alt="" srcset="">
+                            <img class="images20" src="images/motos/4A0A5955.jpg" alt="" srcset="">
 
-                <div role="tablist" class="carousel__indicadores"></div>
-            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2-content" class="tab-content-item">
+                        <div class="tab-2-content-grid">
+
+                        </div>
+                    </div>
+                    <div id="tab-3-content" class="tab-content-item">
+                        <div class="tab-3-content-grid">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>

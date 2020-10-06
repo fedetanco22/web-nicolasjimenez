@@ -27,3 +27,34 @@ window.addEventListener('load', function () {
 
     });
 });
+
+
+const tabItems = document.querySelectorAll('.tabs__item');
+const tabContentItems = document.querySelectorAll('.tab-content-item');
+
+
+// Select tab-content where Grid photos is
+function selectItem(e) {
+    removeBorder();
+    removeShow();
+    // Add class with red Border
+    this.classList.add('tabs__item--border');
+    // get item content from DOM
+    // console.log(this.id)
+    const tabContentItem = document.querySelector(`#${
+        this.id
+    }-content`);
+    tabContentItem.classList.add('show');
+}
+
+// Remove red border when it is not selected
+function removeBorder() {
+    tabItems.forEach(item => item.classList.remove('tabs__item--border'));
+}
+// Remove SHOW class so we can see the content
+function removeShow() {
+    tabContentItems.forEach(items => items.classList.remove('.show'));
+}
+
+// listen for tab click in icons
+tabItems.forEach(item => item.addEventListener('click', selectItem))

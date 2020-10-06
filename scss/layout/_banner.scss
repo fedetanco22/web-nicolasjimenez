@@ -2,7 +2,7 @@
     @include bg-img();
     background-image: url('/images/IMG_0963.jpg');
     background-color: $color-topo;
-    height: 95vh;
+    height: 80vh;
     position: relative;
 
     &::after {
@@ -14,8 +14,8 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.503);
         z-index: 1;
-        /* box-shadow: inset -20px -20px 50px #000, inset -10px -20px 100px #000; */
-        /* inset -50px -100px 250px #000; */
+        box-shadow: inset 50px 50px 50px #000, inset -50px -50px 100px #000;
+
     }
 
 
