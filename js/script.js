@@ -35,15 +35,21 @@ const tabContentItems = document.querySelectorAll('.tab-content-item');
 
 // Select tab-content where Grid photos is
 function selectItem(e) {
+
     removeBorder();
     removeShow();
+
     // Add class with red Border
     this.classList.add('tabs__item--border');
+
+    // Asign the ID to  avariable so we can call it back
+    const idItem = this.id
+
     // get item content from DOM
-    // console.log(this.id)
     const tabContentItem = document.querySelector(`#${
-        this.id
+        idItem
     }-content`);
+
     tabContentItem.classList.add('show');
 }
 
@@ -53,7 +59,7 @@ function removeBorder() {
 }
 // Remove SHOW class so we can see the content
 function removeShow() {
-    tabContentItems.forEach(items => items.classList.remove('.show'));
+    tabContentItems.forEach(item => item.classList.remove('show'));
 }
 
 // listen for tab click in icons

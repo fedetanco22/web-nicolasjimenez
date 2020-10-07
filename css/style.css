@@ -267,9 +267,9 @@ img {
     line-height: 1rem; } }
 
 .tabs {
-  background-color: #333;
+  background-color: #222121;
   padding-top: 1rem;
-  border-bottom: 3px solid #3d3d3d;
+  border-bottom: 2px solid #777;
   width: 100%; }
   .tabs__container {
     display: grid;
@@ -280,7 +280,6 @@ img {
     text-align: center;
     max-width: 70%;
     margin: auto;
-    overflow: hidden;
     padding: 0 20px; }
   .tabs__item {
     padding: 20px 0; }
@@ -296,17 +295,22 @@ img {
   display: none;
   opacity: 0; }
 
-.tab-1-content-grid {
+.show {
+  display: block !important;
+  opacity: 1 !important;
+  transition: all 1000 ease-in; }
+
+.tab-1-content-grid,
+.tab-2-content-grid,
+.tab-3-content-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  column-gap: 5px;
-  row-gap: 5px;
+  grid-template-columns: repeat(4, 2fr);
   padding: 100px; }
 
 .images {
   width: 100%;
-  height: 100%; }
+  object-fit: cover;
+  display: block; }
 
 .show {
   display: block !important;
