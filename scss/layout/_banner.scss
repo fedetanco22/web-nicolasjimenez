@@ -1,6 +1,6 @@
 .banner {
     @include bg-img();
-    background-image: url('../images/banner.jpg');
+    background-image: url('/images/banner.jpg');
     background-color: $color-topo;
     height: 80vh;
     position: relative;
