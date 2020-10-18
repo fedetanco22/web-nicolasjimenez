@@ -4,6 +4,11 @@
     text-align: center;
     text-transform: uppercase;
 
+    &__h3 {
+        color: #333;
+        font-size: 2em;
+    }
+
 
     &__contenedor {
         position: relative;
@@ -19,7 +24,7 @@
         display: block;
         width: 30px;
         height: 4px;
-        background: #fff;
+        background: #333;
         opacity: .2;
         border-radius: 0;
 
@@ -45,13 +50,15 @@
         line-height: 30px;
         text-align: center;
         background: none;
-        color: #fff;
+        color: #000;
         opacity: 20%;
+        border: white;
     }
 
     &__siguiente:hover,
     &__anterior:hover {
         opacity: 100%;
+
     }
 
     &__anterior {

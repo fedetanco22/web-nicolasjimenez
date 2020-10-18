@@ -21,24 +21,30 @@
 
     &__titulos {
         transform: translateY(100%);
-        /* padding-top: 35vh; */
+        // padding-top: 35vh;
         position: relative;
         z-index: 2;
 
 
+
+
         &__h1 {
             font-size: 5em;
-            color: #fff;
+            color: transparent;
             text-transform: uppercase;
-
+            // text-shadow: 5px 5px 15px #fff;
+            -webkit-text-stroke: 2px #fff;
         }
+
 
         &__h3 {
             font-style: italic;
-            font-weight: 300;
-            color: #fff;
+            font-weight: 400;
+            font-size: 2rem;
+            color: red;
             text-transform: uppercase;
             padding: 0 0 20px 0;
+
         }
 
     }

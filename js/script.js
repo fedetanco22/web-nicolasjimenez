@@ -1,32 +1,4 @@
-window.addEventListener('load', function () {
-    new Glider(document.querySelector('.carousel__lista'), {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        rewind: true,
-
-        arrows: {
-            prev: '.carousel__anterior',
-            next: '.carousel__siguiente'
-        },
-        responsive: [
-            {
-                breakpoint: 567,
-                settings: { // Set to `auto` and provide item width to adjust to viewport
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    dots: '.carousel__indicadores'
-                }
-            }, {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 5,
-                    slidesToScroll: 5
-                }
-            }
-        ]
-
-    });
-});
+window.addEventListener('load', function () { new Glider(document.querySelector('.carousel__lista'), { slidesToShow: 1, slidesToScroll: 1, rewind: true, arrows: { prev: '.carousel__anterior', next: '.carousel__siguiente' }, responsive: [{ breakpoint: 567, settings: { slidesToShow: 3, slidesToScroll: 3, dots: '.carousel__indicadores' } }, { breakpoint: 1024, settings: { slidesToShow: 5, slidesToScroll: 5 } } ], }); });
 
 
 const tabItems = document.querySelectorAll('.tabs__item');
@@ -43,12 +15,8 @@ function selectItem(e) {
     this.classList.add('tabs__item--border');
 
     // Asign the ID to  avariable so we can call it back
-    const idItem = this.id
-
-    // get item content from DOM
-    const tabContentItem = document.querySelector(`#${
-        idItem
-    }-content`);
+    const idItem = this.id// get item content from DOM
+    const tabContentItem = document.querySelector(`#${ idItem }-content`);
 
     tabContentItem.classList.add('show');
 }
@@ -63,4 +31,27 @@ function removeShow() {
 }
 
 // listen for tab click in icons
-tabItems.forEach(item => item.addEventListener('click', selectItem))
+tabItems.forEach(item => item.addEventListener('click', selectItem));
+
+
+// =========== BOTON SUBIR =============
+
+const mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    }
+    else {
+        mybutton.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

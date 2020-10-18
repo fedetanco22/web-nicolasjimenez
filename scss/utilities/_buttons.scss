@@ -1,8 +1,15 @@
-.whatsapp-button {
-    /* background-color: #25d366; */
-    background-color: red;
-    padding: 10px 20px;
-    border-radius: 45px;
-    text-transform: capitalize;
-    font-size: 1.5rem;
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #666;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 4px;
 }

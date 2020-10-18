@@ -1,0 +1,31 @@
+.footer {
+    background-color: $color-topo;
+
+    &__copyright {
+
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 6rem;
+
+        &__txt {
+            color: $color-grisClaro;
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .footer {
+        &__copyright {
+            &__txt {
+                font-size: 1.5rem;
+
+                &--fjt {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
