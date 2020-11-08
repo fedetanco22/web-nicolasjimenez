@@ -17,11 +17,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <!-- FONTS -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400;1,800&display=swap"
         rel="stylesheet">
 </head>
 
@@ -30,256 +26,94 @@
         <button onclick="topFunction()" id="myBtn">
             <i class="fas fa-arrow-up" aria-hidden="true"></i>
         </button>
-        <!--  <header class="header">
-            <div class="header__contenedor container">
-
-                <a href="/index.html"><img class="header__logo" src="images/logo-blanco.svg" alt="logo" srcset="">
-                </a>
-
+        <header class="header">
+            <div class="header__contenedor container-fluid d-flex justify-content-end">
                 <input type="checkbox" id="hamb" class="hamb">
-                <label for="hamb" class="hamb__label">
+                <label for="hamb" class="hamb__label ">
                     <span class="hamb__button">
-                        <i class="hamb__icon fas fa-bars"></i>
+                        <svg viewBox="0 0 70 55">
+                            <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                            <path d="M28,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                            <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                        </svg>
                     </span>
                 </label>
 
                 <nav class="menu">
+
                     <ul class="menu__list">
-                        <li class="menu__item"> <a class="menu__link" href="index.html"> Inicio </a></li>
-                        <li class="menu__item"> <a class="menu__link" href="index.html"> sobre mi </a></li>
-                        <li class="menu__item"> <a class="menu__link" href="contacto.html"> Contacto </a></li>
-                        <li class="menu__item menu__instagram">
-                            <a href="#" class="menu__link menu__link-insta redes__links"><i
+                        <figure class="menu__pic">
+                            <img class="menu__img" src="./images/logos/logo negro transparente.png" logo">
+                        </figure>
+                        <li class="menu__item"> <a class="menu__link menu__link--hover" href="index.html"> Inicio </a>
+                        </li>
+                        <li class="menu__item"> <a class="menu__link menu__link--hover" href="index.html"> Sobre Mi </a>
+                        </li>
+                        <li class="menu__item"><a class="menu__link menu__link--hover" href="contacto.html"> Galería
+                            </a></li>
+                        <li class="menu__item d-flex">
+                            <a href="https://www.instagram.com/nico_jimenez_fotos/"
+                                class="menu__link menu__link-insta redes__links" target="blank"><i
                                     class="menu__icon fab fa-instagram"></i></a>
-                            <a href="#" class="menu__link menu__link-insta redes__links"><i
+
+                            <a href="https://www.facebook.com/profile.php?id=100009382898560"
+                                class="menu__link menu__link-insta redes__links" target="blank"><i
                                     class="menu__icon fab fa-facebook"></i></a>
-                            <a href="#" class="menu__link menu__link-insta redes__links"><i
-                                    class="menu__icon fab fa-twitter"></i></a>
+
+                            <a href="https://twitter.com/fotosnicoj" class="menu__link menu__link-insta redes__links"
+                                target="blank"><i class="menu__icon fab fa-twitter"></i></a>
                         </li>
                     </ul>
                 </nav>
             </div>
-        </header> -->
-        <!--  <header class="header">
-            <div class="container-fluid">
-                <div class="row justify-content-around align-items-center">
-                    <a class="logo col-3"><img class="logo__img" src="images/logo-blanco.svg" alt="logo" srcset="">
-                    </a>
+        </header>
 
-
-                    <input type="checkbox" id="hamb" class="hamb">
-                    <label for="hamb" class="hamb__label">
-                        <span class="hamb__button">
-                            <i class="hamb__icon fas fa-bars"></i>
-                        </span>
-                    </label>
-
-                    <nav class="menu col-7 ">
-                        <ul class="row menu__list ">
-                            <li class="menu__item"><a href="#" class="menu__link">Inicio</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Sobre Mi</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Contacto</a></li>
-                        </ul>
-                    </nav>
-                    <div class="redes">
-                        <a href="#" class="redes__links"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="redes__links"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="redes__links"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-
-        </header> -->
-        <div class="banner">
-            <div class="container">
-                <div class="container banner__titulos">
-                    <h1 class="banner__titulos__h1">Nicol&aacute;s</h1>
-                    <h1 class="banner__titulos__h1">Jim&eacute;nez</h1>
-                    <h3 class="banner__titulos__h3">/ Fot&oacute;grafo</h3>
-                </div>
+        <div class="banner d-flex flex-column align-items-center justify-content-center">
+            <div class="container banner__container ">
+                <figure class="banner__pic d-flex flex-column align-items-center justify-content-center">
+                    <img class="banner__img" src="./images/logos/logo blanco transparente.png" alt="logo">
+                    <source srcset="">
+                </figure>
             </div>
         </div>
 
-        <main class="principal flex-column">
+        <main class="principal d-flex flex-column">
 
             <section class="tabs">
-                <div class="tabs__container">
-                    <div id="tab-1" class="tabs__item tabs__item--border">
+                <article class="tabs__container">
+                    <div id="tab-0" class="tabs__item tabs__item--border">
                         <i class="fas fa-motorcycle fa-3x"></i>
                         <p class="hide-sm">Motocross</p>
                     </div>
-                    <div id="tab-2" class="tabs__item ">
+                    <div id="tab-1" class="tabs__item ">
                         <i class="fas fa-car fa-3x"></i>
                         <p class="hide-sm">Rally</p>
                     </div>
-                    <div id="tab-3" class="tabs__item ">
+                    <div id="tab-2" class="tabs__item ">
                         <i class="fas fa-futbol fa-3x"></i>
                         <p class="hide-sm">F&uacute;tbol</p>
                     </div>
-                    <div id="tab-4" class="tabs__item ">
+                    <div id="tab-3" class="tabs__item ">
                         <i class="fab fa-avianex fa-3x"></i>
                         <p class="hide-sm">Dron</p>
                     </div>
-                    <div id="tab-5" class="tabs__item ">
+                    <div id="tab-4" class="tabs__item ">
                         <i class="fas fa-shield-alt fa-3x"></i>
                         <p class="hide-sm">ByN</p>
                     </div>
-                    <div id="tab-6" class="tabs__item ">
+                    <div id="tab-5" class="tabs__item ">
                         <i class="fas fa-camera-retro fa-3x"></i>
                         <p class="hide-sm">Varios</p>
                     </div>
-                </div>
+                </article>
             </section>
+
             <section class="tab-content">
                 <div class="container-tab">
-                    <!-- TAB CONTENT 1 -->
-                    <div id="tab-1-content" class="tab-content-item show">
-                        <div class="tab-1-content-grid">
-                            <img class="images1" src="images/motos/1.jpg" alt="foto">
-                            <img class="images2" src="images/motos/2.jpg" alt="foto">
-                            <img class="images3" src="images/motos/3.jpg" alt="foto">
-                            <img class="images4" src="images/motos/4.jpg" alt="foto">
-                            <img class="images5" src="images/motos/5.jpg" alt="foto">
-                            <img class="images6" src="images/motos/6.jpg" alt="foto">
-                            <img class="images7" src="images/motos/7.jpg" alt="foto">
-                            <img class="images8" src="images/motos/8.jpg" alt="foto">
-                            <img class="images9" src="images/motos/9.jpg" alt="foto">
-                            <img class="images10" src="images/motos/10.jpg" alt="foto">
-                            <img class="images11" src="images/motos/11.jpg" alt="foto">
-                            <img class="images12" src="images/motos/12.jpg" alt="foto">
-                            <img class="images13" src="images/motos/13.jpg" alt="foto">
-                            <img class="images14" src="images/motos/14.jpg" alt="foto">
-                            <img class="images15" src="images/motos/19.jpg" alt="foto">
-                            <img class="images16" src="images/motos/16.jpg" alt="foto">
-                            <img class="images17" src="images/motos/17.jpg" alt="foto">
-                            <img class="images18" src="images/motos/18.jpg" alt="foto">
-                            <img class="images19" src="images/motos/15.jpg" alt="foto">
-                            <img class="images20" src="images/motos/20.jpg" alt="foto">
-                        </div>
-                    </div>
-                    <div id="tab-2-content" class="tab-content-item">
-                        <div class="tab-2-content-grid">
-                            <img class="images11" src="images/rally/1.jpg" alt="foto">
-                            <img class="images21" src="images/rally/2.jpg" alt="foto">
-                            <img class="images31" src="images/rally/3.jpg" alt="foto">
-                            <img class="images41" src="images/rally/4.jpg" alt="foto">
-                            <img class="images51" src="images/rally/5.jpg" alt="foto">
-                            <img class="images61" src="images/rally/6.jpg" alt="foto">
-                            <img class="images71" src="images/rally/7.jpg" alt="foto">
-                            <img class="images81" src="images/rally/8.jpg" alt="foto">
-                            <img class="images91" src="images/rally/9.jpg" alt="foto">
-                            <img class="images101" src="images/rally/10.jpg" alt="foto">
-                            <img class="images111" src="images/rally/11.jpg" alt="foto">
-                            <img class="images121" src="images/rally/12.jpg" alt="foto">
-                            <img class="images131" src="images/rally/13.jpg" alt="foto">
-                            <img class="images141" src="images/rally/14.jpg" alt="foto">
-                            <img class="images151" src="images/rally/19.jpg" alt="foto">
-                            <img class="images161" src="images/rally/16.jpg" alt="foto">
-                            <img class="images171" src="images/rally/17.jpg" alt="foto">
-                            <img class="images181" src="images/rally/18.jpg" alt="foto">
-                            <img class="images191" src="images/rally/15.jpg" alt="foto">
-                            <img class="images201" src="images/rally/20.jpg" alt="foto">
-                        </div>
-                    </div>
-                    <div id="tab-3-content" class="tab-content-item">
-                        <div class="tab-3-content-grid">
-                            <img class="images12" src="images/motos/1.jpg" alt="foto">
-                            <img class="images22" src="images/motos/2.jpg" alt="foto">
-                            <img class="images32" src="images/motos/3.jpg" alt="foto">
-                            <img class="images42" src="images/motos/4.jpg" alt="foto">
-                            <img class="images52" src="images/motos/5.jpg" alt="foto">
-                            <img class="images62" src="images/motos/6.jpg" alt="foto">
-                            <img class="images72" src="images/motos/7.jpg" alt="foto">
-                            <img class="images82" src="images/motos/8.jpg" alt="foto">
-                            <img class="images92" src="images/motos/9.jpg" alt="foto">
-                            <img class="images102" src="images/motos/10.jpg" alt="foto">
-                            <img class="images112" src="images/motos/11.jpg" alt="foto">
-                            <img class="images122" src="images/motos/12.jpg" alt="foto">
-                            <img class="images132" src="images/motos/13.jpg" alt="foto">
-                            <img class="images142" src="images/motos/14.jpg" alt="foto">
-                            <img class="images152" src="images/motos/19.jpg" alt="foto">
-                            <img class="images162" src="images/motos/16.jpg" alt="foto">
-                            <img class="images172" src="images/motos/17.jpg" alt="foto">
-                            <img class="images182" src="images/motos/18.jpg" alt="foto">
-                            <img class="images192" src="images/motos/15.jpg" alt="foto">
-                            <img class="images202" src="images/motos/20.jpg" alt="foto">
-                        </div>
-                    </div>
-                    <div id="tab-4-content" class="tab-content-item">
-                        <div class="tab-4-content-grid">
-                            <img class="images12" src="images/motos/1.jpg" alt="foto">
-                            <img class="images22" src="images/motos/2.jpg" alt="foto">
-                            <img class="images32" src="images/motos/3.jpg" alt="foto">
-                            <img class="images42" src="images/motos/4.jpg" alt="foto">
-                            <img class="images52" src="images/motos/5.jpg" alt="foto">
-                            <img class="images62" src="images/motos/6.jpg" alt="foto">
-                            <img class="images72" src="images/motos/7.jpg" alt="foto">
-                            <img class="images82" src="images/motos/8.jpg" alt="foto">
-                            <img class="images92" src="images/motos/9.jpg" alt="foto">
-                            <img class="images102" src="images/motos/10.jpg" alt="foto">
-                            <img class="images112" src="images/motos/11.jpg" alt="foto">
-                            <img class="images122" src="images/motos/12.jpg" alt="foto">
-                            <img class="images132" src="images/motos/13.jpg" alt="foto">
-                            <img class="images142" src="images/motos/14.jpg" alt="foto">
-                            <img class="images152" src="images/motos/19.jpg" alt="foto">
-                            <img class="images162" src="images/motos/16.jpg" alt="foto">
-                            <img class="images172" src="images/motos/17.jpg" alt="foto">
-                            <img class="images182" src="images/motos/18.jpg" alt="foto">
-                            <img class="images192" src="images/motos/15.jpg" alt="foto">
-                            <img class="images202" src="images/motos/20.jpg" alt="foto">
-                        </div>
-                    </div>
-                    <div id="tab-5-content" class="tab-content-item">
-                        <div class="tab-5-content-grid">
-                            <img class="images12" src="images/motos/1.jpg" alt="foto">
-                            <img class="images22" src="images/motos/2.jpg" alt="foto">
-                            <img class="images32" src="images/motos/3.jpg" alt="foto">
-                            <img class="images42" src="images/motos/4.jpg" alt="foto">
-                            <img class="images52" src="images/motos/5.jpg" alt="foto">
-                            <img class="images62" src="images/motos/6.jpg" alt="foto">
-                            <img class="images72" src="images/motos/7.jpg" alt="foto">
-                            <img class="images82" src="images/motos/8.jpg" alt="foto">
-                            <img class="images92" src="images/motos/9.jpg" alt="foto">
-                            <img class="images102" src="images/motos/10.jpg" alt="foto">
-                            <img class="images112" src="images/motos/11.jpg" alt="foto">
-                            <img class="images122" src="images/motos/12.jpg" alt="foto">
-                            <img class="images132" src="images/motos/13.jpg" alt="foto">
-                            <img class="images142" src="images/motos/14.jpg" alt="foto">
-                            <img class="images152" src="images/motos/19.jpg" alt="foto">
-                            <img class="images162" src="images/motos/16.jpg" alt="foto">
-                            <img class="images172" src="images/motos/17.jpg" alt="foto">
-                            <img class="images182" src="images/motos/18.jpg" alt="foto">
-                            <img class="images192" src="images/motos/15.jpg" alt="foto">
-                            <img class="images202" src="images/motos/20.jpg" alt="foto">
-                        </div>
-                    </div>
-                    <div id="tab-6-content" class="tab-content-item">
-                        <div class="tab-6-content-grid">
-                            <img class="images12" src="images/motos/1.jpg" alt="foto">
-                            <img class="images22" src="images/motos/2.jpg" alt="foto">
-                            <img class="images32" src="images/motos/3.jpg" alt="foto">
-                            <img class="images42" src="images/motos/4.jpg" alt="foto">
-                            <img class="images52" src="images/motos/5.jpg" alt="foto">
-                            <img class="images62" src="images/motos/6.jpg" alt="foto">
-                            <img class="images72" src="images/motos/7.jpg" alt="foto">
-                            <img class="images82" src="images/motos/8.jpg" alt="foto">
-                            <img class="images92" src="images/motos/9.jpg" alt="foto">
-                            <img class="images102" src="images/motos/10.jpg" alt="foto">
-                            <img class="images112" src="images/motos/11.jpg" alt="foto">
-                            <img class="images122" src="images/motos/12.jpg" alt="foto">
-                            <img class="images132" src="images/motos/13.jpg" alt="foto">
-                            <img class="images142" src="images/motos/14.jpg" alt="foto">
-                            <img class="images152" src="images/motos/19.jpg" alt="foto">
-                            <img class="images162" src="images/motos/16.jpg" alt="foto">
-                            <img class="images172" src="images/motos/17.jpg" alt="foto">
-                            <img class="images182" src="images/motos/18.jpg" alt="foto">
-                            <img class="images192" src="images/motos/15.jpg" alt="foto">
-                            <img class="images202" src="images/motos/20.jpg" alt="foto">
-                        </div>
-                    </div>
                 </div>
             </section>
 
+            <!-- Carrousel Marcas -->
             <section class="container">
                 <div class="carousel container ">
                     <h3 class="carousel__h3">Marcas que confian</h3>
@@ -316,11 +150,7 @@
                             <div class="carousel__elemento">
                                 <img class="carousel__img" src="images/logos/RADIKAL.png" alt="" srcset="">
                             </div>
-                            <div class="carousel__elemento">
-                                <img class="carousel__img"
-                                    src="images/logos/ kisspng-just-1-j12-dominator-helmet-supermoto-motorcycle-    h-5b915f7ee8ef30.1605240615362538229541.png"
-                                    alt="" srcset="">
-                            </div>
+
                         </div>
 
                         <button aria-label="Siguiente" class="carousel__siguiente">
@@ -335,16 +165,18 @@
         </main>
 
         <!-- inicio boton whatsapp -->
-        <a class="whatsapp-button-fixed" target="blank" href="https://wa.me/5493516367968"><i
+        <a class="whatsapp-button-fixed" target="blank" href="https://wa.me/5493515292504"><i
                 class="fab fa-whatsapp text-white"></i></a>
         <!-- fin boton whatsapp -->
 
-        <footer class="footer">
+        <footer class="footer d-flex align-items-center justify-content-center">
             <!--Copyrights -->
             <div class="footer__copyright d-flex justify-content-center">
                 <h6 class="footer__copyright__txt">&copy; Nicol&aacute;s Jim&eacute;nez 2020 - Todos los derechos
                     reservados</h6>
-                <h6 class="footer__copyright__txt--fjt">Design by Federico Tanco</h6>
+                <h6 class="footer__copyright__txt--fjt"> <a href="https://github.com/fedetanco22" target="blank">Design
+                        by
+                        Federico Tanco | Porfolio</a> </h6>
             </div>
         </footer>
 
@@ -355,6 +187,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script src="https://kit.fontawesome.com/8ee6cf5ee4.js" crossorigin="anonymous"></script>
+    <script src="js/data.js"></script>
     <script src="js/script.js"></script>
 
 </body>

@@ -2,7 +2,7 @@
     @include bg-img();
     background-image: url('../images/banner.jpg');
     background-color: $color-topo;
-    height: 80vh;
+    height: 100vh;
     position: relative;
 
     &::after {
@@ -18,34 +18,26 @@
 
     }
 
+    &__container {
+        position: absolute;
+        z-index: 3;
+        width: 100vw;
 
-    &__titulos {
-        transform: translateY(100%);
-        // padding-top: 35vh;
-        position: relative;
-        z-index: 2;
+    }
 
+    &__img {
+        width: 70%;
+    }
 
+}
 
+@media screen and (min-width: 768px) {
+    .banner {
 
-        &__h1 {
-            font-size: 5em;
-            color: transparent;
-            text-transform: uppercase;
-            // text-shadow: 5px 5px 15px #fff;
-            -webkit-text-stroke: 2px #fff;
-        }
-
-
-        &__h3 {
-            font-style: italic;
-            font-weight: 400;
-            font-size: 2rem;
-            color: red;
-            text-transform: uppercase;
-            padding: 0 0 20px 0;
+        &::after {
+            box-shadow: inset 120px 100px 250px #000,
+                inset -120px -100px 250px #000;
 
         }
-
     }
 }

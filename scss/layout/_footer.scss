@@ -1,8 +1,9 @@
 .footer {
     background-color: $color-topo;
+    height: 100px;
+
 
     &__copyright {
-
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -12,6 +13,12 @@
         &__txt {
             color: $color-grisClaro;
             font-size: 1rem;
+            padding-bottom: 5px;
+
+            &--fjt {
+                font-size: 1rem;
+                padding-top: 5px;
+            }
         }
     }
 }
@@ -19,12 +26,14 @@
 @media screen and (min-width: 576px) {
     .footer {
         &__copyright {
+
             &__txt {
                 font-size: 1.5rem;
 
                 &--fjt {
-                    font-size: 1rem;
+                    font-size: 1.25rem;
                 }
+
             }
         }
     }
