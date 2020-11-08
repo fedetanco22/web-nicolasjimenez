@@ -60,7 +60,7 @@ function createTabs() {
             const imgs = document.createElement('picture');
             imgs.classList.add('gallery__pic');
             imgs.innerHTML = `
-                            <img class="gallery__pic--img" alt="" src=${
+                            <img class="gallery__pic--img" alt="foto${i}" src=${
                 item.images[i]
             }>`
             article.appendChild(imgs)
