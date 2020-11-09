@@ -76,6 +76,11 @@ function createTabs() {
     });
 }
 
+
+// =====================================================================
+// listen for tab click in icons
+tabItems.forEach(item => item.addEventListener('click', selectItem));
+
 // Select tab-content where Grid photos is
 function selectItem(e) {
     e.preventDefault()
@@ -92,7 +97,6 @@ function selectItem(e) {
     tabContentItem.classList.add('show');
 }
 
-
 // Remove red border when it is not selected
 function removeBorder() {
     tabItems.forEach(item => item.classList.remove('tabs__item--border'));
@@ -102,9 +106,7 @@ function removeShow() {
     tabContentItems.forEach(item => item.classList.remove('show'));
 }
 
-// listen for tab click in icons
-tabItems.forEach(item => item.addEventListener('click', selectItem));
-
+// =====================================================================
 
 // =====================================================================
 // =========================== BOTON SUBIR =============================
@@ -128,12 +130,10 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+// =====================================================================
 
-
-// ============ MENU HAMBURGUESA =====================
-
+// ============ MENU HAMBURGUESA =======================================
 const hambur = document.querySelectorAll('.hamb__button')
-
 
 hambur.forEach(btn => {
     btn.addEventListener('click', e => {
@@ -144,3 +144,4 @@ hambur.forEach(btn => {
 
     });
 });
+// ============ MENU HAMBURGUESA =======================================
